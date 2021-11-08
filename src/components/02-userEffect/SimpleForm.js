@@ -1,37 +1,70 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import './effects.css'
+import { Message } from './Message';
 
 
 export const SimpleForm = () => {
     
-    useEffect( ( ) => {
-        fetch("https://random-recipes.p.rapidapi.com/ai-quotes/10", {
-            "method": "GET",
-            "headers": {
-                "x-rapidapi-host": "random-recipes.p.rapidapi.com",
-                "x-rapidapi-key": "my-api-key"
-            }
-        })
-        .then(response => response.json().then( console.log )
-        )
-        .catch(err => {
-            console.error(err);
-        });
+
+    const [formState, setFormState] = useState({
+        name: '',
+        email: ''
     })
 
+    const { name, email } = formState;
 
-  
+    const handleInputChange = ( { target } ) => {
+        setFormState({
+            ...formState,
+            [ target.name ] : target.value
+            // name: target.value
+        })
+    }
 
-    //useEffect permite ejecutar algun efecto secundario, cuando algo suceda en nuestros componentes
+    useEffect(() => {
+        // console.log('omg')
+    }, [])
 
+    useEffect(() => {
+        // console.log('formState cambió')
+    }, [formState]) 
+
+    useEffect(() => {
+        // console.log('email  cambió')
+    }, [email]) 
 
 
     return (
         <>
          <h1>useEffect</h1>   
          <hr/>
+         <div className="form-group">
+            <input
+                type="text"
+                name="name"
+                className="form-control"
+                placeholder="Tu nombre"
+                autoComplete="off"
+                value={ name }
+                onChange={ handleInputChange } 
+            />
+            
+         </div>
+         <br/>
 
+         <div className="form-group">
+            <input
+                type="text"
+                name="email"
+                className="form-control"
+                placeholder="email@gmail.com"
+                autoComplete="off"
+                value={ email }
+                onChange={ handleInputChange } 
+            />
+         </div>
+         { ( name === '123') && <Message /> }
 
         </>
     )
