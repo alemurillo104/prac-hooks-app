@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 import { useFetch } from '../../hooks/useFetch'
 
 import '../02-userEffect/effects.css'
@@ -7,14 +7,21 @@ import '../02-userEffect/effects.css'
 export const MultipleCustomHooks = ( ) => {
     
 
+    const [counter, setCounter] = useState(1);
 
-
-    const { data, error, loading } = useFetch(`https://www.breakingbadapi.com/api/quotes/1`);
+    const { data, error, loading } = useFetch(`https://www.breakingbadapi.com/api/quotes/${counter}`);
     console.log(data);
 
     const { author, quote } = !!data && data[0];
 
     console.log( author, quote );
+
+    const getNext = () => {
+        
+        setCounter(counter + 1);
+        
+        console.log('siguiente we')
+    }
     
     return (
         <div>
@@ -38,26 +45,8 @@ export const MultipleCustomHooks = ( ) => {
                 )
             }
 
+            <button className="btn btn-primary" onClick={ getNext } > Next quote </button>
 
-            { 
-                (data != null)  
-                ? 
-                    (
-                        data.forEach( ({ quote }) => {
-                            // <p>{quote}</p>
-                            console.log('omg');
-                            console.log(quote);
-                            return <p>quote</p>
-                        })
-                    )
-                
-                : (console.log('no tiene data'))
-            
-            }
-            {/* { state.data?.forEach(({ quote }) => {
-                // console.log(quote)
-                <p>{quote}</p>
-            })} */}
         </div>
     )
 }
