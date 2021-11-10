@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import { CardImage } from './components/99-pruebita/CardImage';
 // import { Form } from './components/99-pruebita/Form';
-import { FormCard } from './components/99-pruebita/FormCard';
+// import { FormCard } from './components/99-pruebita/FormCard';
+import { LoginForm } from './components/99-pruebita/LoginForm';
 // import { LayoutEffect } from './components/05-useLayoutEffect/LayoutEffect';
 // import { Prueba } from './components/99-pruebita/Prueba';
 // import { RealExampleUseRef } from './components/04-useRef/RealExampleUseRef';
@@ -23,7 +24,8 @@ ReactDOM.render(
     //     textBody="Omg este es el text body"
     //     onClickButton={() => console.log('omggg')}
     // />,
-    <FormCard />,
+    // <FormCard />,
+    <LoginForm />,
     // <LayoutEffect />,
     document.getElementById('root')
 
