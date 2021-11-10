@@ -1,0 +1,21 @@
+.containerNew{
+    /* padding; */
+    background-image: url('../../assets/img/backgroundForm.png');
+    /* border-radius: 1rem; */
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 200px;
+    padding-left: 200px;
+    
+}
+
+.card{
+    /* background-color: transparent; */
+    opacity: 0.7;
+    border-radius: 5rem;
+
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
