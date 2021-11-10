@@ -1,53 +1,51 @@
 import React from 'react'
 
-export const LoginForm = () => {
+import './inputs.css'
+
+export const LoginForm = (
+    { 
+        loginFormSubmit = () => console.log('help')
+    }) => {
     return (
-        <div className="container">
-            {/* <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Launch demo modal
-            </button>
+        <div>
+            {/* <nav className="navbar navbar-light bg-light">
+                <div className="container-fluid">
+                    <span className="navbar-brand mb-0 h1">Navbar</span>
+                </div>
+            </nav> */}
+            <div className="col-sm-12 col-md-6 col-lg-4 container maxCard">
+                <div className="card">
+                    <div className="card-body">
+                        <div className="card-title text-uppercase text-center">
+                            <strong>Iniciar Sesion</strong>
+                        </div>
+                        <div className="card-text">
+                            <div className="md-4 mb-2">
+                                <label htmlFor="email" className="form-label"> 
+                                    <strong>Email:</strong>
+                                </label>
+                                <input name="email" type="text" className="form-control" id="email" />
+                            </div>
+                            <div className="md-4 mb-2">
+                                <label htmlFor="password" className="form-label"> 
+                                    <strong>Contraseña:</strong>
+                                </label>
+                                <input name="password" type="password" className="form-control" id="password" />
+                            </div>
 
-            <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div className="modal-dialog">
-                    <div className="modal-content">
-                        <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div className="modal-body">
-                            ...
-                        </div>
-                        <div className="modal-footer">
-                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" className="btn btn-primary">Save changes</button>
-                        </div>
+                        {/* <div className="card-footer text-center">
+                            <button className="btn btn-primary float-right">click me</button>
+                            <button className="btn btn-primary float-right">click me 2</button>
+                        </div> */}
                     </div>
-                </div>
-            </div> */}
+                    <div className="card-footer text-center">
+                        <button className="btn btn-primary float-end" type="button" id="toright" onClick={ loginFormSubmit }>Iniciar Sesion</button>
+                        <button className="btn btn-light float-end" type="button" id="more">Atras</button>
+                    </div>
 
-            <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-            Launch demo modal
-            </button>
-
-            <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div className="modal-dialog" role="document">
-                <div className="modal-content">
-                <div className="modal-header">
-                    <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div className="modal-body">
-                    ...
-                </div>
-                <div className="modal-footer">
-                    <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" className="btn btn-primary">Save changes</button>
-                </div>
                 </div>
             </div>
-            </div>
-        </div>
+       </div>
     )
 }
