@@ -13,11 +13,11 @@ export const MultipleCustomHooks = ( ) => {
     // const [counter, setCounter] = useState(1);
 
     const { data, error, loading } = useFetch(`https://www.breakingbadapi.com/api/quotes/${counter}`);
-    console.log(data);
+    // console.log(data);
 
     const { author, quote } = !!data && data[0];
 
-    console.log( author, quote );
+    // console.log( author, quote );
 
        
     return (
