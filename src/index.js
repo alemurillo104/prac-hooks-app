@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { FooterCard } from './components/99-pruebita/FooterCard';
+import { CarrouselCard } from './components/99-pruebita/CarrouselCard';
+// import { FooterCard } from './components/99-pruebita/FooterCard';
+// import { PPrincipal } from './components/99-pruebita/PPrincipal';
 // import { CardImage } from './components/99-pruebita/CardImage';
 // import { Form } from './components/99-pruebita/Form';
 // import { FormCard } from './components/99-pruebita/FormCard';
@@ -27,7 +29,7 @@ ReactDOM.render(
     //     onClickButton={() => console.log('omggg')}
     // />,
     // <FormCard />,
-    <FooterCard />,
+    <CarrouselCard />,
     // <LayoutEffect />,
     document.getElementById('root')
 
