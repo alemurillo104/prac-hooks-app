@@ -1,6 +1,8 @@
 import React from 'react'
 
 import Fotito  from '../../assets/img/backgroundForm.png'
+import Fotito2  from '../../assets/img/back2.jpg'
+import Fotito3  from '../../assets/img/back3.jpg'
 
 import './carrouselcard.css'
 
@@ -8,11 +10,13 @@ export const CarrouselCard = () => {
     return (
         <div>
             <div id="myCarousel" className="carousel slide" data-ride="carousel">
-            <ol className="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
+                <div className="col-md-3 ml-md-auto">
+                    <ol className="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                </div>
 
             <div className="carousel-inner">
                 <div className="item active">
@@ -24,11 +28,11 @@ export const CarrouselCard = () => {
                 </div>
 
                 <div className="item">
-                <img src={Fotito} alt="Chicago" />
+                <img src={Fotito2} alt="Chicago" />
                 </div>
 
                 <div className="item">
-                <img src={Fotito} alt="New York" />
+                <img src={Fotito3} alt="New York" />
                 </div>
             </div>
 
