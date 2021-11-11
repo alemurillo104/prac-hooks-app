@@ -8,11 +8,7 @@ export const LoginForm = (
     }) => {
     return (
         <div>
-            {/* <nav className="navbar navbar-light bg-light">
-                <div className="container-fluid">
-                    <span className="navbar-brand mb-0 h1">Navbar</span>
-                </div>
-            </nav> */}
+          
             <div className="col-sm-12 col-md-6 col-lg-4 container maxCard">
                 <div className="card">
                     <div className="card-body">
@@ -32,12 +28,7 @@ export const LoginForm = (
                                 </label>
                                 <input name="password" type="password" className="form-control" id="password" />
                             </div>
-
                         </div>
-                        {/* <div className="card-footer text-center">
-                            <button className="btn btn-primary float-right">click me</button>
-                            <button className="btn btn-primary float-right">click me 2</button>
-                        </div> */}
                     </div>
                     <div className="card-footer text-center">
                         <button className="btn btn-primary float-end" type="button" id="toright" onClick={ loginFormSubmit }>Iniciar Sesion</button>

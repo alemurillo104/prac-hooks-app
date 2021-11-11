@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { FooterCard } from './components/99-pruebita/FooterCard';
 // import { CardImage } from './components/99-pruebita/CardImage';
 // import { Form } from './components/99-pruebita/Form';
 // import { FormCard } from './components/99-pruebita/FormCard';
-import { LoginForm } from './components/99-pruebita/LoginForm';
+// import { LoginForm } from './components/99-pruebita/LoginForm';
+// import { NavCard } from './components/99-pruebita/NavCard';
 // import { LayoutEffect } from './components/05-useLayoutEffect/LayoutEffect';
 // import { Prueba } from './components/99-pruebita/Prueba';
 // import { RealExampleUseRef } from './components/04-useRef/RealExampleUseRef';
@@ -25,7 +27,7 @@ ReactDOM.render(
     //     onClickButton={() => console.log('omggg')}
     // />,
     // <FormCard />,
-    <LoginForm />,
+    <FooterCard />,
     // <LayoutEffect />,
     document.getElementById('root')
 
