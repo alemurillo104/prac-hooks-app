@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { CarouselImages } from './components/99-pruebita/CarouselImages';
+// import { CarouselImages } from './components/99-pruebita/CarouselImages';
+// import { Carrousel2 } from './components/99-pruebita/Carrousel2';
+import { CarrouselCard } from './components/99-pruebita/CarrouselCard';
+// import { CarouselImages } from './components/99-pruebita/CarouselImages';
 // import { CarrouselCard } from './components/99-pruebita/CarrouselCard';
 // import { FooterCard } from './components/99-pruebita/FooterCard';
 // import { PPrincipal } from './components/99-pruebita/PPrincipal';
@@ -30,7 +33,8 @@ ReactDOM.render(
     //     onClickButton={() => console.log('omggg')}
     // />,
     // <FormCard />,
-    <CarouselImages />,
+    <CarrouselCard />,
+    // <CarrouselCard />,
     // <LayoutEffect />,
     document.getElementById('root')
 

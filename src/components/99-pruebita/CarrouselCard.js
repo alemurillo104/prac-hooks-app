@@ -20,7 +20,7 @@ export const CarrouselCard = () => {
 
             <div className="carousel-inner">
                 <div className="item active">
-                    <img src={Fotito} alt="Los Angeles" />
+                    <img src="./images/01.png" alt="Los Angeles" />
                     <div className="carousel-caption d-none d-md-block">
                         <h5>First slide label</h5>
                         <p>Some representative placeholder content for the first slide.</p>
@@ -28,11 +28,11 @@ export const CarrouselCard = () => {
                 </div>
 
                 <div className="item">
-                <img src={Fotito2} alt="Chicago" />
+                <img src="./images/02.jpg" alt="Chicago" />
                 </div>
 
                 <div className="item">
-                <img src={Fotito3} alt="New York" />
+                <img src="./images/03.jpg" alt="New York" />
                 </div>
             </div>
 
