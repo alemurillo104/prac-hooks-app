@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { ImageHover } from './components/99-pruebita/ImageHover/ImageHover';
+// import { NavCard } from './components/99-pruebita/NavCard/NavCard';
 // import { CarrouselCard } from './components/99-pruebita/CarrouselCard/CarrouselCard';
-import { NavCard2 } from './components/99-pruebita/NavCard/NavCard2';
 
 
 ReactDOM.render(
@@ -13,7 +14,7 @@ ReactDOM.render(
     //     onClickButton={() => console.log('omggg')}
     // />,
     // <FormCard />,
-    <NavCard2 />,
+    <ImageHover />,
     // <CarrouselCard />,
     // <LayoutEffect />,
     document.getElementById('root')
