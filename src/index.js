@@ -1,6 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ImageHover } from './components/99-pruebita/ImageHover/ImageHover';
+// import { CallbackHook } from './components/06-memos/CallbackHook';
+import { Padre } from './components/07-tarea-memo/Padre';
+// import { MemoHook } from './components/06-memos/MemoHook';
+// import { LayoutEffect } from './components/05-useLayoutEffect/LayoutEffect';
+// import { Memorize } from './components/06-memos/Memorize';
+// import { ImageHover } from './components/99-pruebita/ImageHover/ImageHover';
+// import { ImageToolTip } from './components/99-pruebita/ImageHover/ImageToolTip';
 // import { NavCard } from './components/99-pruebita/NavCard/NavCard';
 // import { CarrouselCard } from './components/99-pruebita/CarrouselCard/CarrouselCard';
 
@@ -14,9 +20,9 @@ ReactDOM.render(
     //     onClickButton={() => console.log('omggg')}
     // />,
     // <FormCard />,
-    <ImageHover />,
+    // <ImageToolTip />,
     // <CarrouselCard />,
-    // <LayoutEffect />,
+    <Padre />,
     document.getElementById('root')
 
 );
